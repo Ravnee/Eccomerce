@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+{% block content %}
+<div class="reg">
+    <h3 class="text-center mt-3">Welcome to our registration page, register yourself for future updates</h3>
+</div>
+{% comment %} <div class="form">
+    <form method="POST">
+        {% csrf_token %}
+        <label for="fname">First Name </label>
+        <input type="text" id ="fname" name="fname" placeholder = "First Name" Required><br> 
+        <label for="lname">Last Name </label>
+        <input type="text" id ="lname" name="lname" placeholder = "Last Name" Required><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br> 
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br> 
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder = "Email" Required><br>
+        <input type="checkbox" id="tnc" name="tnc" value="tnc" Required>
+        <label for="tnc"> Agree to our terms and conditions</label><br>
+        <div class="formsubmit"><input type="submit" value="Submit"></div>
+    </form>
+</div>  {% endcomment %}
+<div>
+    <form class="signform" method="POST">
+        {% csrf_token %}
+        <div class="row g-3 regform m-3">
+            <div class="col">
+                <label for="fname" class="form-label">First Name</label>
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="First name" aria-label="First name" Required>
+            </div>
+            <div class="col">
+                <label for="lname" class="form-label">Last Name</label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last name" aria-label="Last name" Required>
+            </div>
+        </div>
+        <div class="row w-25 m-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp" Required>
+        </div>
+        <div class="row g-3 regform">
+            <div class="col formcheck"> 
+                <input class="form-check-input" type="radio" name="gender" id="male">
+                <label for="male" class="form-label">Male</label>
+                <input class="form-check-input" type="radio" name="gender" id="female">
+                <label for="female" class="form-label">Female</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary d-block mx-auto mt-3 m-3">Register</button>
+    </form>
+</div>
+
+{% endblock content %}

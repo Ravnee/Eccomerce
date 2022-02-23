@@ -1,0 +1,92 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}Episodes{% endblock title %}
+{% block content %}
+<div>
+  <div>
+    <div class="card-group grid">
+      <div class="card grid border border-primary episode">
+        <img src="{% static 'images/card1.jpg' %}" class="card-img-top" alt="card1.jpg">
+        <div class="card-body text-center">
+          <h5 class="card-title ">Card title</h5>
+          <p class="card-text">Episode1</p>
+          <a href="{% static 'images/card1.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer text-center">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card grid rounded text-center border border-primary episode">
+        <img src="{% static 'images/card2.jpg' %}" class="card-img-top" alt="card2.jpg">
+        <div class="card-body episode">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Episode 2</p>
+          <a href="{% static 'images/card2.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card grid text-center border border-primary episode">
+        <img src="{% static 'images/card3.jpg' %}" class="card-img-top" alt="card3.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Episode 3</p>
+          <a href="{% static 'images/card3.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div>
+    <div class="card-group grid">
+      <div class="card grid rounded text-center border border-primary episode">
+        <img src="{% static 'images/card4.jpg' %}" class="card-img-top episode" alt="card4.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Episode 4</p>
+          <a href="{% static 'images/card4.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card grid rounded text-center border border-primary episode">
+        <img src="{% static 'images/card5.jpg' %}" class="card-img-top" alt="card5.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Episode 5</p>
+          <a href="{% static 'images/card5.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card grid text-center border border-primary episode">
+        <img src="{% static 'images/card6.jpg' %}" class="card-img-top" alt="card6.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Episode 6</p>
+          <a href="{% static 'images/card6.jpg' %}" class="btn btn-primary m-1">Watch</a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+    <div class="card" style="width: 12rem;">
+      <img class="card-img-top m-3" src="{% static 'images/card1.jpg' %}" alt="card1">
+      <div class="card-body">
+        <h5 class="card-title">Episode 1</h5>
+        <p class="card-text">click and enjoy</p>
+        <a href="{% static 'images/card1.jpg' %}" class="btn btn-primary m-1">Watch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

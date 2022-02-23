@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+<div>
+  {% comment %} <div class='mydiv3'>
+    <a href="">Home</a>
+    <a href="ContactUs/">Contact Us</a>
+    <a href="AboutUs/">About Us</a>
+    <a href="SignIn/">Sign In</a>
+    <a href="Register/"> Register</a>
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div> {% endcomment %}
+
+  <!-- Button trigger modal -->
+  
+  <div class='homediv1'>
+    <h3 class="text-center mt-3"> Welcome to SHOPSY :D </h3>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active con">
+        <img src="{% static 'images/1.jpg' %}" class="rounded mx-auto d-block  k" alt="1">
+      </div>
+      <div class="carousel-item con">
+        <img src=" {% static 'images/16.jpg' %}" class="rounded mx-auto d-block k" alt="16">
+      </div>
+      <div class="carousel-item con">
+        <img src="{% static 'images/20.jpg' %}" class="rounded mx-auto d-block k" alt="20">
+      </div>
+      <div class="carousel-item con">
+        <img src="{% static 'images/10.jpg' %}" class="rounded mx-auto d-block k" alt="10">
+      </div>
+      <div class="carousel-item con">
+        <img src="{% static 'images/12.jpg' %}" class="rounded mx-auto d-block k" alt="12">
+      </div>
+      {% comment %} <div class="carousel-item image">
+        <img src="{images/6.jpg" class="d-block w-100" alt="6">
+      </div>
+      <div class="carousel-item image">
+        <img src="images/7.jpg" class="d-block w-100" alt="7">
+      </div>
+      <div class="carousel-item image">
+        <img src="images/8.jpg" class="d-block w-100" alt="8">
+      </div>{% endcomment %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon indicatorcolor" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon indicatorcolor" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  {% comment %} <div class='homediv2'>
+    <a href="google/">
+      <img src="{% static 'images/uzumaki.jpg' %}" alt="uzumaki" width=1400px height=600px>
+    </a>
+  </div> {% endcomment %}
+</div>
+<script>
+  if(window.history.replaceState){
+    window.history.replaceState(null,null,window.location.href);
+  } 
+</script>
+
+
+{% endblock content %}
+{% comment %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+</body>
+
+</html> {% endcomment %}

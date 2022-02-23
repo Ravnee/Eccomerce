@@ -1,0 +1,84 @@
+/* class selector */
+
+/* .reg{
+        border:10px solid black;
+        margin: 100px
+}
+.mydiv3{
+    border: 5px dotted black;
+    font-size: larger;
+    justify-content: space-around;
+}
+
+.homediv2{
+        margin: 20px  130px;
+        border: 4px solid grey;        
+}
+
+.form{
+        border: 5px dotted blue;
+        font-size: xx-large;
+        font-weight: 10px;
+        text-align: left;
+        padding: 10%;
+        margin:20px;
+}
+
+.formsubmit{
+        text-align: center;
+        font-size: xx-large;
+}
+/* universal selector */
+/* *{
+        background: linear-gradient(rgb(0, 255, 170),lightblue) no-repeat;
+}  */
+
+.indicatorcolor{
+        background-color: lightseagreen;     
+}
+
+.k{
+        width: 100%;
+        height: auto;
+}
+.con img{
+        width: 50%;
+}
+
+.grid{
+        margin: 10px;
+        
+}
+
+.grid img{
+        width:400px;
+        height:400px;
+}
+
+.regform{
+        margin:5px;
+}
+
+.episode img{ 
+        width: 100%;
+}
+
+.cards{
+        display: flex;
+
+}
+
+.signform{
+        border-color:crimson;
+        border-width: 20px;
+        border-style: solid;
+}
+
+.heads{
+        border-color:cornflowerblue;
+        border-width: 20px;
+        border-style: solid;
+        background-image: url('static/images/white.jpg');
+}
+
+
